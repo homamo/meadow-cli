@@ -23,5 +23,14 @@
     "eslint-plugin-react": "^7.20.3",
     "eslint-plugin-react-hooks": "^4.0.5",
     "prettier": "^2.1.2"
+  },
+  "dependencies": {
+    "fs-extra": "^9.0.1",
+    "minimist": "^1.2.5",
+    "path": "^0.12.7",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "replace-in-file": "^6.1.0",
+    "styled-components": "^5.2.1"
   }
 }
