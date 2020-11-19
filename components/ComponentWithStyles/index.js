@@ -1,5 +1,5 @@
-import Component from './Component';
-import ComponentStyles from './Styles';
+// import Component from './Component';
+// import ComponentStyles from './Styles';
 
-export const Styles = ComponentStyles;
-export default Component;
+// export const Styles = ComponentStyles;
+// export default Component;

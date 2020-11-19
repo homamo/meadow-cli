@@ -1,7 +1,7 @@
-import styled from 'styled-components';
+// import styled from 'styled-components';
 
-const Component = styled.div``;
+// const Rabbit = styled.div``;
 
-export default {
-  Component,
-};
+// export default {
+//   Rabbit,
+// };

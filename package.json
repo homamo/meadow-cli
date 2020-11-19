@@ -6,8 +6,10 @@
   "license": "MIT",
   "repository": "homamo/meadow-scripts",
   "main": "index.js",
-  "directories": {
-    "test": "test"
+  "bin": {
+    "mdw-test": "bin/test.js",
+    "mdw-log-path": "bin/logFilePaths.js",
+    "mdw-component": "bin/createComponent.js"
   },
   "scripts": {
     "test": "eslint ."
@@ -30,7 +32,6 @@
     "path": "^0.12.7",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
-    "replace-in-file": "^6.1.0",
-    "styled-components": "^5.2.1"
+    "replace-in-file": "^6.1.0"
   }
 }

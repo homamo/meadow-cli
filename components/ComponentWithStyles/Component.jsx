@@ -1,20 +1,20 @@
-import React from 'react';
-// import PropTypes from 'prop-types';
-import Styles from './Styles';
+// import React from 'react';
+// // import PropTypes from 'prop-types';
+// import Styles from './Styles';
 
-const Component = () => (
-  <Styles.Component>
-    {/* CODE */}
-    {/* CODE */}
-  </Styles.Component>
-);
+// const RabbitComponent = () => (
+//   <Styles.Rabbit>
+//     {/* CODE */}
+//     {/* CODE */}
+//   </Styles.Rabbit>
+// );
 
-// Component.propTypes = {
-//   name: PropTypes.string,
-// };
+// // RabbitComponent.propTypes = {
+// //   name: PropTypes.string,
+// // };
 
-// Component.defaultProps = {
-//   name: undefined,
-// };
+// // RabbitComponent.defaultProps = {
+// //   name: undefined,
+// // };
 
-export default Component;
+// export default RabbitComponent;
