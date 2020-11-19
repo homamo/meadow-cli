@@ -9,7 +9,8 @@
   "bin": {
     "mdw-test": "bin/test.js",
     "mdw-log-path": "bin/logFilePaths.js",
-    "mdw-component": "bin/createComponent.js"
+    "mdw-component": "bin/createComponent.js",
+    "mdw-resource-server": "bin/createServerResource.js"
   },
   "scripts": {
     "test": "eslint ."

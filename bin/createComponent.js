@@ -1,6 +1,6 @@
 #! /usr/bin/env node
 const createComponent = require('../lib/createComponent');
-const capitalize = require('../lib/capitalize');
+const { capitalize } = require('../lib/utils');
 
 const name = capitalize(process.argv[2]);
 
