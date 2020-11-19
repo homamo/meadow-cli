@@ -1,10 +1,10 @@
 {
-  "name": "@homamo/meadow-scripts",
+  "name": "@homamo/meadow-cli",
   "version": "0.0.1",
   "description": "Useful scripts for automating Meadow project development",
   "author": "Samuel Goudie <sam@homamo.co>",
   "license": "MIT",
-  "repository": "homamo/meadow-scripts",
+  "repository": "homamo/meadow-cli",
   "main": "index.js",
   "bin": {
     "mdw-test": "bin/test.js",

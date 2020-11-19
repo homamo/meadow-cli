@@ -1,6 +1,8 @@
 #! /usr/bin/env node
 const path = require('path');
 
-const root = path.resolve(process.cwd());
+const packageDirectory = path.dirname(__dirname);
+const projectDirectory = path.dirname(process.cwd());
 
-console.log(root);
+console.log(`packageDirectory: ${packageDirectory}`);
+console.log(`projectDirectory: ${projectDirectory}`);
