@@ -1,6 +1,6 @@
 {
   "name": "@homamo/meadow-cli",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Useful scripts for automating Meadow project development",
   "author": "Samuel Goudie <sam@homamo.co>",
   "license": "MIT",
