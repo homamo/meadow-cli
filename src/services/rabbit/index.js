@@ -12,7 +12,7 @@ import importRabbits from './lib/importRabbits';
 import generateRabbitPdf from './lib/generateRabbitPdf';
 import getRandomRabbit from './lib/getRandomRabbit';
 // DEV
-import createFakeRabbits from './dev/createFakeRabbits';
+import createFakeRabbits from './lib/createFakeRabbits';
 
 export default class RabbitService {
   async Create(options) {
