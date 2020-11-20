@@ -49,7 +49,7 @@ const processRow = async ({ row, currentUserId }) => {
       row,
     });
 
-    if (redFoxData.title) {
+    if (redFoxData.name) {
       await createRedFoxOnDatabase({
         redFoxData,
         currentUserId,

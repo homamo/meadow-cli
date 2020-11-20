@@ -3,12 +3,14 @@
 const createClientResource = require('../lib/createClientResource');
 
 const name = process.argv[2];
-const dashName = process.argv[3];
+const pluralName = process.argv[3];
 
-if (dashName) {
-  console.log(`Running Create Client Resource with '${name}' and ${dashName}`);
+if (pluralName) {
+  console.log(
+    `Running Create Client Resource with '${name}' and ${pluralName}`,
+  );
 } else {
   console.log(`Running Create Client Resource with '${name}'`);
 }
 
-createClientResource({ name, dashName });
+createClientResource({ name, pluralName });

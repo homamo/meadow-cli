@@ -61,7 +61,7 @@ const validateOptions = (options) => {
     Logger.debug('[createRedFox.validateOptions] Validating options...');
 
     if (!options) throw new Error('options object is required.');
-    if (!options.title) throw new Error('options.title is required.');
+    if (!options.name) throw new Error('options.name is required.');
     if (!options.currentUserId && !options.ownerId)
       throw new Error('options.currentUserId or options.ownerId is required.');
 

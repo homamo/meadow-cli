@@ -21,7 +21,7 @@ const RedFoxView = ({ data, setDisplayError, displayError }) => {
   return (
     <div>
       <Link to="/red-foxes">View all Red Foxes</Link>
-      <h1>{data.title}</h1>
+      <h1>{data.name}</h1>
       <Error error={displayError} />
       <DefinitionList termWidth={termWidth}>
         <Definition term="ID" definition={data._id} />
@@ -41,7 +41,7 @@ const RedFoxView = ({ data, setDisplayError, displayError }) => {
         />
       </DefinitionList>
 
-      {data.image && <img src={data.image} alt={data.title} />}
+      {data.image && <img src={data.image} alt={data.name} />}
 
       <ButtonGroup>
         <Button label="Edit" linkTo={`/red-fox/${data._id}/edit`} />
@@ -57,7 +57,7 @@ const RedFoxView = ({ data, setDisplayError, displayError }) => {
 RedFoxView.propTypes = {
   data: PropTypes.shape({
     _id: PropTypes.string,
-    title: PropTypes.string,
+    name: PropTypes.string,
     status: PropTypes.string,
     image: PropTypes.string,
     owner: PropTypes.shape({

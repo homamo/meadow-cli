@@ -1,9 +1,14 @@
 #! /usr/bin/env node
-const { capitalize } = require('@homamo/meadow-utils');
+/* eslint-disable no-console */
 const createComponent = require('../lib/createComponent');
 
-const name = capitalize(process.argv[2]);
+const name = process.argv[2];
+const pluralName = process.argv[3];
 
-console.log(`Running Create Component with '${name}'`);
+if (pluralName) {
+  console.log(`Running Create Component with '${name}' and ${pluralName}`);
+} else {
+  console.log(`Running Create Component with '${name}'`);
+}
 
 createComponent({ name });

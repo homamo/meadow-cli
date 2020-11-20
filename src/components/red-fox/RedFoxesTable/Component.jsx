@@ -26,10 +26,10 @@ const RedFoxesTableComponent = ({
     /* eslint-disable react/prop-types */
     () => [
       {
-        Header: 'Title',
-        accessor: 'title',
+        Header: 'Name',
+        accessor: 'name',
         sortType: 'basic',
-        id: 'title',
+        id: 'name',
         sticky: 'left',
         minWidth: 180,
       },
@@ -105,7 +105,7 @@ const RedFoxesTableComponent = ({
         totalCount={totalCount}
         blankState="No Red Foxes found"
         initialSortBy={initialSortBy}
-        searchPlaceholder="Search for a Red Fox title"
+        searchPlaceholder="Search for a Red Fox name"
         filterOptions={filterOptions}
         isCompact={isCompact}
         enableSearch
