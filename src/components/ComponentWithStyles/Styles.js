@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-const Rabbit = styled.div``;
+const RedFox = styled.div``;
 
 export default {
-  Rabbit,
+  RedFox,
 };

@@ -10,7 +10,8 @@
     "mdw-test": "bin/test.js",
     "mdw-log-path": "bin/logFilePaths.js",
     "mdw-component": "bin/createComponent.js",
-    "mdw-resource-server": "bin/createServerResource.js"
+    "mdw-resource-server": "bin/createServerResource.js",
+    "mdw-resource-client": "bin/createClientResource.js"
   },
   "scripts": {
     "test": "eslint ."
@@ -28,6 +29,7 @@
     "prettier": "^2.1.2"
   },
   "dependencies": {
+    "@homamo/meadow-utils": "0.0.11",
     "fs-extra": "^9.0.1",
     "minimist": "^1.2.5",
     "path": "^0.12.7",

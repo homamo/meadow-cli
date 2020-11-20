@@ -1,6 +1,6 @@
 #! /usr/bin/env node
+const { capitalize } = require('@homamo/meadow-utils');
 const createComponent = require('../lib/createComponent');
-const { capitalize } = require('../lib/utils');
 
 const name = capitalize(process.argv[2]);
 

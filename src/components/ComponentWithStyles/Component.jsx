@@ -2,19 +2,19 @@ import React from 'react';
 // import PropTypes from 'prop-types';
 import Styles from './Styles';
 
-const RabbitComponent = () => (
-  <Styles.Rabbit>
+const RedFoxComponent = () => (
+  <Styles.RedFox>
     {/* CODE */}
     {/* CODE */}
-  </Styles.Rabbit>
+  </Styles.RedFox>
 );
 
-// RabbitComponent.propTypes = {
+// RedFoxComponent.propTypes = {
 //   name: PropTypes.string,
 // };
 
-// RabbitComponent.defaultProps = {
+// RedFoxComponent.defaultProps = {
 //   name: undefined,
 // };
 
-export default RabbitComponent;
+export default RedFoxComponent;
