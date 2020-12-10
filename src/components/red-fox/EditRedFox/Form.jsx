@@ -82,7 +82,7 @@ const EditRedFoxForm = ({ id, initialData }) => {
                     type="submit"
                     mode="primary"
                     loadingLabel="Updating Red Fox"
-                    isLoading={isSubmitting || isUploading}
+                    isLoading={isSubmitting}
                   />
                   <Button
                     label="Cancel"

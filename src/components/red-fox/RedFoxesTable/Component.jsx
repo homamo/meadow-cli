@@ -1,12 +1,10 @@
 import React, { useMemo } from 'react';
 import PropTypes from 'prop-types';
-import { useHistory } from 'react-router-dom';
-import { formatDateTime } from '@homamo/meadow-utils';
+import { formatDateTime, keepParams } from '@homamo/meadow-utils';
 
 import Button from '../../common/Button';
 import Table, { TableButtonGroup } from '../../common/Table';
 import DeleteRedFox from '../DeleteRedFox';
-import DuplicateRedFox from '../DuplicateRedFox';
 import RedFoxStatusBadge from '../RedFoxStatusBadge';
 
 const RedFoxesTableComponent = ({
@@ -20,8 +18,6 @@ const RedFoxesTableComponent = ({
   onRedFoxDeleted,
   isCompact,
 }) => {
-  const history = useHistory();
-
   const columns = useMemo(
     /* eslint-disable react/prop-types */
     () => [
@@ -76,13 +72,15 @@ const RedFoxesTableComponent = ({
         width: 330,
         Cell: ({ cell: { value } }) => (
           <TableButtonGroup>
-            <Button label="View" size="s" linkTo={`/red-fox/${value}`} />
-            <Button label="Edit" size="s" linkTo={`/red-fox/${value}/edit`} />
-            <DuplicateRedFox
-              id={value}
-              onRedFoxDuplicated={(newRedFoxId) => {
-                history.push(`/red-fox/${newRedFoxId}`);
-              }}
+            <Button
+              label="View"
+              size="s"
+              linkTo={keepParams(`/red-fox/${value}`)}
+            />
+            <Button
+              label="Edit"
+              size="s"
+              linkTo={keepParams(`/red-fox/${value}/edit`)}
             />
             <DeleteRedFox id={value} onRedFoxDeleted={onRedFoxDeleted} />
           </TableButtonGroup>
@@ -97,6 +95,7 @@ const RedFoxesTableComponent = ({
   return (
     <>
       <Table
+        name="red-foxes"
         columns={columns}
         data={data}
         fetchData={fetchData}

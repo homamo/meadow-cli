@@ -1,13 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import { formatDateTime } from '@homamo/meadow-utils';
+import { formatDateTime, keepParams } from '@homamo/meadow-utils';
 
 import Definition, { DefinitionList } from '../../common/Definition';
 import Error from '../../common/ErrorMessage';
 import Button, { ButtonGroup } from '../../common/Button';
 import RedFoxStatusBadge from '../RedFoxStatusBadge';
-import DownloadRedFoxPdf from '../DownloadRedFoxPdf';
 
 const RedFoxView = ({ data, setDisplayError, displayError }) => {
   const termWidth = '120px';
@@ -20,7 +19,7 @@ const RedFoxView = ({ data, setDisplayError, displayError }) => {
 
   return (
     <div>
-      <Link to="/red-foxes">View all Red Foxes</Link>
+      <Link to={keepParams('/red-foxes')}>View all Red Foxes</Link>
       <h1>{data.name}</h1>
       <Error error={displayError} />
       <DefinitionList termWidth={termWidth}>
@@ -45,10 +44,6 @@ const RedFoxView = ({ data, setDisplayError, displayError }) => {
 
       <ButtonGroup>
         <Button label="Edit" linkTo={`/red-fox/${data._id}/edit`} />
-        <DownloadRedFoxPdf
-          redFoxId={data._id}
-          setDisplayError={setDisplayError}
-        />
       </ButtonGroup>
     </div>
   );
