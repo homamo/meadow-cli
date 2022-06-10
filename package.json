@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "@homamo/meadow-utils": "0.0.11",
-    "fs-extra": "^9.0.1",
+    "fs-extra": "^10.0.0",
     "minimist": "^1.2.5",
     "path": "^0.12.7",
     "prop-types": "^15.7.2",
